@@ -1,0 +1,349 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+.hero-section {
+  position: relative;
+  /* background: url("/assets/img/holyfire.jpg") no-repeat center center/cover; */
+  height: 100vh;
+}
+.hero-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(158, 109, 109, 0.5),
+    rgba(74, 2, 2, 0.5)
+  );
+}
+.hero-section .content {
+  position: relative;
+  z-index: 1;
+}
+/* Make navbar sticky */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff; /* Default background */
+  border-bottom: 2px solid transparent; /* Default no border */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar links */
+.navbar .nav-link {
+  color: #000; /* Default link color */
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+/* Hover effect for links */
+.navbar .nav-link:hover {
+  color: #800000; /* Maroon text */
+  border-bottom: 2px solid #800000; /* Maroon border on hover */
+}
+
+/* Active link (override Bootstrap) */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-item.show .nav-link {
+  color: #800000 !important;
+  border-bottom: 2px solid #800000;
+  background-color: transparent !important;
+}
+
+/* Optional: slight shadow to separate navbar from content */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.bg-maroon {
+  background-color: #4a0202;
+}
+.text-maroon {
+  color: #4a0202;
+}
+.video-embed {
+  min-width: 300px;
+  flex: 0 0 auto;
+}
+
+.masonry-gallery {
+  column-count: 4;
+  column-gap: 20px;
+}
+.gallery-section {
+  /* height: 100vh; */
+  align-items: center;
+  padding: 50px 0;
+}
+.gallery-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(158, 109, 109, 0.5),
+    rgba(74, 2, 2, 0.5)
+  );
+}
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  position: relative;
+  border: 3px solid maroon;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item .subtitle {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(161, 161, 161, 0.6);
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .masonry-gallery {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .masonry-gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry-gallery {
+    column-count: 1;
+  }
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.lightbox .subtitle {
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* About.html */
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.about-hero {
+  background: linear-gradient(to bottom, rgba(74, 2, 2), rgba(158, 109, 109));
+}
+.team-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid maroon;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #800000;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-icon {
+  color: #6c757d; /* Default grey */
+  transition: color 0.3s ease;
+}
+
+.about-card:hover .about-icon {
+  color: #800000; /* Maroon */
+}
+
+/* Concert.html */
+.hero-section {
+  position: relative;
+  height: 70vh;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-maroon {
+  background-color: #4a0202;
+  color: #fff;
+  border: none;
+}
+
+.btn-maroon:hover {
+  background-color: #6a0d0d;
+}
+
+.btn-outline-maroon {
+  border: 1px solid #4a0202;
+  color: #4a0202;
+  background: transparent;
+}
+
+.btn-outline-maroon:hover {
+  background-color: #4a0202;
+  color: #fff;
+}
+
+/* Merch.html */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.merch-hero {
+  position: relative;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.merch-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+
+.merch-hero .container {
+  z-index: 2;
+}
+
+.notify-section {
+  background-color: #f8f9fa;
+}
+
+.btn-maroon {
+  background-color: #b00505;
+  color: white;
+  border: none;
+}
+
+.btn-maroon:hover {
+  background-color: #4a0202;
+  color: white;
+}
+
+/* Contact.html */
+.contact-hero {
+  height: 70vh;
+  position: relative;
+}
+
+.contact-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.text-maroon {
+  color: #800000;
+}
+
+.btn-maroon {
+  background-color: #800000;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-maroon:hover {
+  background-color: #a00000;
+  color: #fff;
+}
