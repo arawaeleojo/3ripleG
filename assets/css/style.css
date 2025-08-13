@@ -193,6 +193,21 @@ h2 {
   font-weight: bold;
 }
 
+/* Fade-in + Slide-up Animation for Hero Title */
+.animate-title {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .about-hero {
   background: linear-gradient(to bottom, rgba(74, 2, 2), rgba(158, 109, 109));
 }
