@@ -2,137 +2,197 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact – Triple E</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Minister Emmanuel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <!-- Navigation -->
+    <nav class="main-nav">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">3riple E</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./concert.html">Concerts</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./merch.html">Merch</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./contact.html">Contact</a></li>
-                </ul>
+            <div class="nav-brand">
+                <span class="logo">Minister Emmanuel</span>
+            </div>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="music.html">Music</a>
+                    <a href="events.html">Events</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="contact-hero d-flex align-items-center bg-maroon justify-content-center text-white text-center">
-        <!-- <div class="overlay"></div> -->
-        <div class="container position-relative" data-aos="fade-down">
-            <h1 class="display-4 fw-bold">We’d Love to Hear from You</h1>
-            <p class="lead">Whether you have a question, feedback, or a prayer request — let’s connect!</p>
-        </div>
-    </section>
-
-    <!-- Contact Info -->
-    <section class="contact-info py-5 bg-light">
-        <div class="container" data-aos="fade-up">
-            <div class="row text-center">
-                <div class="col-md-4 mb-4">
-                    <i class="fas fa-envelope fa-2x text-maroon mb-2"></i>
-                    <h5>Email</h5>
-                    <p>3ripleeunpluged@gmail.com</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <i class="fas fa-phone fa-2x text-maroon mb-2"></i>
-                    <h5>Call</h5>
-                    <p>+234 802 700 6092</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <i class="fas fa-map-marker-alt fa-2x text-maroon mb-2"></i>
-                    <h5>Connect</h5>
-                    <div class="mt-2">
-                        <a href="https://www.instagram.com/official_3riplee?igsh=bnRteGZ6ZnN0bjBs" class="text-dark mx-2"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/share/15fxpMjECS/" class="text-dark mx-2"><i class="fab fa-facebook"></i></a>
-                        <a href="tiktok.com/@iam3riplee" class=" mx-2"><i class="text-dark fab fa-tiktok"></i></a>
-                        <a href="https://youtube.com/@iam3riplee?si=c7EAa8uXKiaHI1PQ" class="text-dark mx-2"><i
-                                class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
+    <!-- Contact Hero -->
+    <section class="contact-hero" data-aos="fade-in">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+                <h1>Want to Host Minister Emmanuel?</h1>
+                <p>Reach out to book for your city, campus, or church program</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form -->
-    <section class="contact-form-section py-5 bg-maroon text-white">
-        <div class="container" data-aos="fade-up">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h3 class="text-center mb-4">Let’s Start a Conversation</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+    <!-- Contact Section -->
+    <section class="section contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="contact-description">For booking inquiries, ministry partnerships, or general questions,
+                        please use the contact form or reach us directly.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <a href="mailto:info@ministeremmanuel.com">info@ministeremmanuel.com</a>
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                <input type="email" class="form-control" id="email" placeholder="example@example.com"
-                                    required />
+
+                        <div class="contact-card" data-aos="zoom-in" data-aos-delay="150">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <a href="tel:+2348123456789">+234 812 345 6789</a>
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">Subject</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-tag"></i></span>
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" />
+
+                        <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Lagos, Nigeria</p>
                             </div>
                         </div>
-                        <div class="mb-4">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Your message..."
-                                required></textarea>
+                    </div>
+
+                    <div class="social-links" data-aos="fade-up" data-aos-delay="250">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
                         </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-maroon px-4 py-2">Send Message</button>
+                    </div>
+                </div>
+
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form class="contact-form">
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
                         </div>
+
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="150">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+                            <input type="text" id="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="250">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="300">
+                            Send Message
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Newsletter -->
+    <section class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to get news about upcoming events, new releases, and more.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-4 text-center">
-        <div>Copyright 2025 3riple € | All Rights Reserved.</div>
-        <div class="mt-2">
-            <a href="https://www.instagram.com/official_3riplee?igsh=bnRteGZ6ZnN0bjBs" class="text-white mx-2"><i
-                    class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/share/15fxpMjECS/" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
-            <a href="tiktok.com/@iam3riplee" class="text-white mx-2"><i class="fab fa-tiktok"></i></a>
-            <a href="https://youtube.com/@iam3riplee?si=c7EAa8uXKiaHI1PQ" class="text-white mx-2"><i
-                    class="fab fa-youtube"></i></a>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" data-aos="fade-up">
+                    <h3 class="footer-logo">Minister Emmanuel</h3>
+                    <p>Spreading the gospel through powerful worship and music ministry.</p>
+                    <div class="social-links">
+                        <a href="#" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-instagram"></i></a>
+                        <a href="#" data-aos="zoom-in" data-aos-delay="150"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-youtube"></i></a>
+                        <a href="#" data-aos="zoom-in" data-aos-delay="250"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@ministeremmanuel.com</li>
+                        <li><i class="fas fa-phone"></i> +234 812 345 6789</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom" data-aos="fade-in">
+                <p>&copy; 2025 Minister Emmanuel. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-quart',
+            once: false,
+            offset: 100
+        });
     </script>
 </body>
 

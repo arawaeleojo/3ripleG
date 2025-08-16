@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music | Minister Emmanuel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">Minister Emmanuel</span>
+            </div>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="music.html" class="active">Music</a>
+                    <a href="events.html">Events</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Music Hero -->
+    <section class="music-hero">
+        <div class="container">
+            <h1>Music Ministry</h1>
+            <p>Songs of worship and praise</p>
+        </div>
+    </section>
+
+    <!-- Music Catalog -->
+    <section class="section music-catalog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Singles & Live Performances</h2>
+                <div class="music-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="single">Singles</button>
+                    <button class="filter-btn" data-filter="live">Live Concerts</button>
+                </div>
+            </div>
+
+            <div class="music-grid">
+                <!-- Single 1 -->
+                <div class="music-card single" data-aos="fade-up">
+                    <div class="music-cover">
+                        <img src="../assets/img/single-cover-1.jpg" alt="Holy Fire Single">
+                        <div class="music-badge">Single</div>
+                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="music-info">
+                        <h3 class="music-title">Holy Fire</h3>
+                        <p class="music-year">2024</p>
+                        <div class="music-links">
+                            <a href="#"><i class="fab fa-spotify"></i></a>
+                            <a href="#"><i class="fab fa-apple"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single 2 -->
+                <div class="music-card single" data-aos="fade-up" data-aos-delay="100">
+                    <div class="music-cover">
+                        <img src="../assets/img/single-cover-2.jpg" alt="Watin I Gain Single">
+                        <div class="music-badge">Single</div>
+                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="music-info">
+                        <h3 class="music-title">Watin I Gain</h3>
+                        <p class="music-year">2023</p>
+                        <div class="music-links">
+                            <a href="#"><i class="fab fa-spotify"></i></a>
+                            <a href="#"><i class="fab fa-apple"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live 1 -->
+                <div class="music-card live" data-aos="fade-up" data-aos-delay="200">
+                    <div class="music-cover">
+                        <img src="../assets/img/live-cover-1.jpg" alt="Holy Ghost Concert">
+                        <div class="music-badge">Live</div>
+                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="music-info">
+                        <h3 class="music-title">Holy Ghost Concert</h3>
+                        <p class="music-year">2023</p>
+                        <div class="music-links">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live 2 -->
+                <div class="music-card live" data-aos="fade-up" data-aos-delay="300">
+                    <div class="music-cover">
+                        <img src="../assets/img/live-cover-2.jpg" alt="Night of Fire">
+                        <div class="music-badge">Live</div>
+                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="music-info">
+                        <h3 class="music-title">Night of Fire</h3>
+                        <p class="music-year">2022</p>
+                        <div class="music-links">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single 3 -->
+                <div class="music-card single" data-aos="fade-up" data-aos-delay="400">
+                    <div class="music-cover">
+                        <img src="../assets/img/single-cover-3.jpg" alt="Deeper Single">
+                        <div class="music-badge">Single</div>
+                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="music-info">
+                        <h3 class="music-title">Deeper</h3>
+                        <p class="music-year">2023</p>
+                        <div class="music-links">
+                            <a href="#"><i class="fab fa-spotify"></i></a>
+                            <a href="#"><i class="fab fa-apple"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live 3 -->
+                <div class="music-card live" data-aos="fade-up" data-aos-delay="500">
+                    <div class="music-cover">
+                        <img src="../assets/img/live-cover-3.jpg" alt="Worship Night">
+                        <div class="music-badge">Live</div>
+                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="music-info">
+                        <h3 class="music-title">Worship Night</h3>
+                        <p class="music-year">2024</p>
+                        <div class="music-links">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">Minister Emmanuel</h3>
+                    <p>Spreading the gospel through powerful worship and music ministry.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@ministeremmanuel.com</li>
+                        <li><i class="fas fa-phone"></i> +234 812 345 6789</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Minister Emmanuel. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+
+</html>
